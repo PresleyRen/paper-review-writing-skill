@@ -1,0 +1,7 @@
+interface:
+  display_name: "论文项目调度"
+  short_description: "Route paper tasks and maintain the review workflow"
+  default_prompt: "使用 $paper-harness 为当前论文建立或执行写作、审稿、修订与核查流程。"
+
+policy:
+  allow_implicit_invocation: true

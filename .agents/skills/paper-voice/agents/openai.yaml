@@ -1,0 +1,7 @@
+interface:
+  display_name: "自然表达与正文净化"
+  short_description: "Preserve author voice and remove defensive padding"
+  default_prompt: "使用 $paper-voice 修改这段论文，保留作者语气、事实和必要限定。"
+
+policy:
+  allow_implicit_invocation: true

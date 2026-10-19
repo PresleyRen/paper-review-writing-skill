@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "manuscript_paths": [
+    "manuscript/main.md"
+  ],
+  "evidence_roots": [
+    "results",
+    "references"
+  ],
+  "notes_roots": [
+    "notes"
+  ],
+  "claims_file": "research/claims.tsv",
+  "issues_file": "research/issues.tsv",
+  "sources_file": "research/sources.tsv",
+  "state_file": "research/state.json",
+  "required_checks": [
+    "claims",
+    "numbers",
+    "citations",
+    "manuscript_boundary"
+  ],
+  "review_language": "zh-CN",
+  "manuscript_language": "en",
+  "evidence_files": []
+}

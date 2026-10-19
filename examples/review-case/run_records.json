@@ -1,0 +1,34 @@
+{
+  "fictional_teaching_material": true,
+  "metric_definition": "successes / all_assigned_tasks; timeouts count as unsuccessful",
+  "runs": [
+    {
+      "method": "baseline",
+      "seed": 7,
+      "assigned": 100,
+      "successes": 66,
+      "failures": 24,
+      "timeouts": 10,
+      "max_model_calls": 4
+    },
+    {
+      "method": "coordinator",
+      "seed": 7,
+      "assigned": 100,
+      "successes": 80,
+      "failures": 10,
+      "timeouts": 10,
+      "max_model_calls": 16
+    }
+  ],
+  "checker": {
+    "input": "simulator.ground_truth",
+    "deployment_tool_exposes_full_state": false
+  },
+  "replication": {
+    "completed_seeds": [
+      7
+    ],
+    "additional_runs_planned": 30
+  }
+}

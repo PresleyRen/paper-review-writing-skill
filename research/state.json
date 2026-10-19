@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "stage": "setup",
+  "submission_requested": false,
+  "checks": {},
+  "checked_artifact_sha256": {},
+  "remaining_blockers": [],
+  "note": "Starter configuration. Set actual manuscript paths before use. No paper has been reviewed or verified."
+}

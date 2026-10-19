@@ -1,0 +1,7 @@
+interface:
+  display_name: "口述笔记成稿"
+  short_description: "Turn rough research notes into faithful paper prose"
+  default_prompt: "使用 $paper-draft 把我的乱序口述笔记整理成保留原意的论文正文。"
+
+policy:
+  allow_implicit_invocation: true

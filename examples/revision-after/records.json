@@ -1,0 +1,8 @@
+{
+  "assigned": 100,
+  "successes": 80,
+  "failures": 10,
+  "timeouts": 10,
+  "completed_runs": 1,
+  "planned_additional_runs": 30
+}

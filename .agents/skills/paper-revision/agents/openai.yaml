@@ -1,0 +1,7 @@
+interface:
+  display_name: "审稿修订与回复"
+  short_description: "Resolve review issues through evidence and concrete edits"
+  default_prompt: "使用 $paper-revision 将审稿意见转成修改任务、正文改动和可追溯回复。"
+
+policy:
+  allow_implicit_invocation: true

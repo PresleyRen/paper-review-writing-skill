@@ -1,0 +1,7 @@
+interface:
+  display_name: "证据与终稿核查"
+  short_description: "Trace claims, numbers, citations, and experimental records"
+  default_prompt: "使用 $paper-evidence-audit 对照原始记录核查主张、数字、单位、图表和引用。"
+
+policy:
+  allow_implicit_invocation: true

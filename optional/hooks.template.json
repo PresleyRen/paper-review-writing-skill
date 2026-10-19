@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /ABS/PAPER_PROJECT/tools/manuscript_stop_hook.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

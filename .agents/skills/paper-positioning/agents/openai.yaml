@@ -1,0 +1,7 @@
+interface:
+  display_name: "论证定位与实验设计"
+  short_description: "Test contributions and design discriminating evidence"
+  default_prompt: "使用 $paper-positioning 检查研究主张、竞争解释与最小判别实验。"
+
+policy:
+  allow_implicit_invocation: true

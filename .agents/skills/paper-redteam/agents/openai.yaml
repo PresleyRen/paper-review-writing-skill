@@ -1,0 +1,7 @@
+interface:
+  display_name: "毒舌审稿人"
+  short_description: "Find concrete rejection reasons and research blind spots"
+  default_prompt: "使用 $paper-redteam 对论文提出有证据定位的拒稿理由、逻辑漏洞和实验疑点。"
+
+policy:
+  allow_implicit_invocation: true

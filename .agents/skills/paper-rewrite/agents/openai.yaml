@@ -1,0 +1,7 @@
+interface:
+  display_name: "来源改写与相似度处理"
+  short_description: "Rewrite source-based prose with accurate attribution"
+  default_prompt: "使用 $paper-rewrite 在保留原意和引用的前提下重写这段来源相关文字。"
+
+policy:
+  allow_implicit_invocation: true

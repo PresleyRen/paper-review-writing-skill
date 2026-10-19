@@ -1,0 +1,14 @@
+读取当前项目 SKILL_GUIDE.md 和 AGENTS.md，对论文技能套件做安装后核验。
+
+预期的八个技能是 paper-harness、paper-positioning、paper-draft、paper-voice、paper-rewrite、paper-redteam、paper-evidence-audit、paper-revision。
+
+核对每个技能的 name/description、agents/openai.yaml、引用资源，以及共享规则和配套 prompts。保留已有项目规则、论文和研究记录。
+区分文件存在、当前会话技能可见性和实际任务表现。能读取当前客户端技能列表时逐一核对；不能检查时标为未验证，不凭磁盘有文件声称注册成功。
+检查 research/PROJECT.json 是否指向真实存在的稿件和证据；缺少材料只列具体路径，不把案例当成真实研究。
+
+可在隔离临时目录运行已提供的本地测试。随后完成两个小任务，不读取已有 eval 输出，不改真实稿件：
+1. 使用 paper-voice，只修正语法并给出改后正文：The controller are designed to retry once. We have not implemented the retry policy.
+2. 使用 paper-redteam 审查这段虚构材料：论文声称在多个随机种子下稳定达到90%的成功率；给定记录是一次运行、30个分配任务、24个成功、3个失败、3个超时，指标定义包含所有分配任务；另有5次运行仍在计划中。定位具体问题，列证据状态、最小检查与关闭条件。
+
+核对实际输出是否保留原始材料中的事实与任务范围。已完成且有记录的检查不必重复。不要用模型自称“已遵守”作为唯一通过证据，不调用外部检测或新增真实实验。
+最后给出实际执行内容、通过/失败/未验证项，以及下一步最适合我的主技能和对应 prompt 编号。
