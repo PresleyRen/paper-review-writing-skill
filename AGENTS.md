@@ -9,9 +9,9 @@ Route by the user's requested action and deliverable, not by words occurring in 
 
 | Requested work | Skill |
 | --- | --- |
-| Set up this workflow or coordinate a complete paper/review/revision cycle | paper-harness |
+| Write or continue a whole paper from research materials, including a survey; coordinate setup, review or revision | paper-harness (paper type selects the route) |
 | Check the research question, contribution, competing explanations or experiment design | paper-positioning |
-| Turn rough notes or supplied evidence into a new passage | paper-draft |
+| Write an abstract, introduction, related work, methods, results or discussion from notes, data or papers | paper-draft (apply its section guide while drafting) |
 | Polish existing prose, remove defensive padding or preserve author voice | paper-voice |
 | Rewrite source-based prose, analyze overlap or compare structural alternatives | paper-rewrite |
 | Review a manuscript, find rejection reasons, logical holes or operational doubts | paper-redteam |

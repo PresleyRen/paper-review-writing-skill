@@ -1,12 +1,16 @@
 ---
 name: paper-draft
-description: "Draft academic prose from rough notes, spoken Chinese, mixed-language fragments, or supplied research evidence. 用于乱序口述成稿、笔记写论文、起草摘要。Use for new manuscript passages; use paper-voice for polishing existing prose and paper-rewrite for source-based paraphrases. Do not trigger for general writing advice or run experiments."
+description: "Write a research manuscript section from evidence or rough notes. 写摘要、引言、相关工作、方法、结果或讨论，边写边核对数据、实验、引文和表述。Use for new passages from records or mixed-language notes, including scoped recomputation from saved results. Route existing-prose-only polish to paper-voice."
 ---
 
 # Paper Draft
 
 Turn the author's available material into the requested manuscript passage.
 Keep the author's priorities and evidence status intact.
+
+## Start writing from the evidence
+
+For a manuscript section, use the relevant row in [Writing with evidence](references/writing-with-evidence.md). For a whole paper, coordinate sections with paper-harness when available. Apply the guide directly if this is the only installed skill. Keep ordinary note-to-prose work lightweight. Choose the companion by the decision it must resolve and use its result in this draft. Draft only after checking the inputs needed for the particular claim. Report a material unresolved gap separately and finish the supported text.
 
 ## Load only relevant context
 

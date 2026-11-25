@@ -2,9 +2,11 @@
 
 用于**严格审稿、证据核查、论文写作和返修**的 Codex 项目工具箱，覆盖研究定位、口述起草、作者声音润色、问题复核与审稿回复。围绕作者提供的真实材料工作，保留主张的证据状态、数值、来源和必要边界，把审稿问题落实到可追溯的修改与复核。
 
-仓库包含 **八个可独立使用的技能、17 组任务提示词、共享写作规则、研究记录模板、本地工具和验证案例**。建议完整保留套件，执行任务时只选择必要技能；一句话润色不需要启动完整论文流程。
+仓库包含 **八个可独立使用的技能、18 组任务提示词、共享写作规则、研究记录模板、本地工具和验证案例**。建议完整保留套件，执行任务时只选择必要技能；一句话润色不需要启动完整论文流程。
 
-版本：2026-10-19。本地 Python 工具面向 **Python 3.10+**，仅使用标准库；本次实测环境为 Python 3.12.14。技能正文和规则文件本身不依赖 Python。
+版本：2026-11-25。本地 Python 工具面向 **Python 3.10+**，仅使用标准库；本次实测环境为 Python 3.12.14。技能正文和规则文件本身不依赖 Python。
+
+整篇写作可以直接说：“使用 `$paper-harness`，根据当前项目的数据和论文写英文初稿。”只写一节可以说：“使用 `$paper-draft` 写 Results，核对实验是否支持每个结论。”已有好句和负面结果都可以保留。[每个场景会触发什么](.agents/skills/paper-draft/references/writing-with-evidence.md) · [完整写作提示词](PROMPTS.md#18-根据材料写整篇论文或一节)
 
 ## 文档入口
 
@@ -14,7 +16,7 @@
 | [AGENTS.md](AGENTS.md) | 项目入口：任务路由、授权范围、正文边界、审稿与问题关闭规则。 |
 | [ACADEMIC_WRITING.md](ACADEMIC_WRITING.md) | 起草或改文：口述笔记、作者声音、证据保真、去自我防御表达。 |
 | [RESEARCH_HARNESS.md](RESEARCH_HARNESS.md) | 多阶段任务：研究状态、角色协作、验收、恢复、可选 hooks 与 CLI。 |
-| [PROMPTS.md](PROMPTS.md) | 直接复制 17 组任务提示词，并替换为真实材料路径。 |
+| [PROMPTS.md](PROMPTS.md) | 直接复制 18 组任务提示词，并替换为真实材料路径。 |
 | [VALIDATION.md](VALIDATION.md) | 查看已经执行的验证、实际输出与未验证的能力。 |
 | [METHODS_AND_SOURCES.md](METHODS_AND_SOURCES.md) | 追查方法来源、整合取舍与配置依据。 |
 
@@ -23,8 +25,8 @@
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/PresleyRen/codex-paper-review-writing.git
-cd codex-paper-review-writing
+git clone https://github.com/PresleyRen/paper-review-writing-skill.git
+cd paper-review-writing-skill
 ```
 
 仓库已包含项目级技能目录 [.agents/skills](.agents/skills) 和配套规则。打开这个目录作为 Codex 项目，检查当前客户端的技能列表是否能看到下表中的八个名称。CLI/IDE 可通过 `/skills` 检查，并用 `$paper-redteam` 等名称明确调用；具体选择方式与核验要求见 [技能指南](SKILL_GUIDE.md)。新增技能未出现时，重开会话后再检查。
@@ -39,7 +41,7 @@ cd codex-paper-review-writing
 
 ### 3. 开始当前任务
 
-可以先复制下面的请求，再从 [17 组提示词](PROMPTS.md) 中选择更具体的版本：
+可以先复制下面的请求，再从 [18 组提示词](PROMPTS.md) 中选择更具体的版本：
 
 > 读取当前项目 AGENTS.md 和 SKILL_GUIDE.md。我的论文材料在【真实路径】，这次要完成【审稿 / 修稿 / 起草 / 核查】，交付【具体要求】。按请求动作选择最小所需技能，列出实际读取的材料后直接完成任务。保留已有研究记录，不把示例当成研究证据。
 
@@ -47,9 +49,9 @@ cd codex-paper-review-writing
 
 | 技能 | 适合的请求 | 主要产出与范围 | 对应 Prompt |
 | --- | --- | --- | --- |
-| [paper-harness](.agents/skills/paper-harness/SKILL.md) | 建立流程；审稿并修稿；投稿前完整检查 | 调度必要阶段，整合产物与检查记录。 | 1、8、12 |
+| [paper-harness](.agents/skills/paper-harness/SKILL.md) | 整篇写作、续稿、审稿修订、投稿前检查 | 调度必要阶段，整合产物与检查记录。 | 1、8、12、18 |
 | [paper-positioning](.agents/skills/paper-positioning/SKILL.md) | 创新点是否成立；如何排除竞争解释 | 主张边界、最近工作差异、最小判别检查或实验设计。计划保持为计划。 | 10 |
-| [paper-draft](.agents/skills/paper-draft/SKILL.md) | 将乱序口述、笔记或已知结果写成新段落 | 忠实的新正文，区分观察、实现、假设与未来工作。 | 2 |
+| [paper-draft](.agents/skills/paper-draft/SKILL.md) | 将口述笔记或现有研究材料写成指定章节 | 忠实的新正文，区分观察、实现、假设与未来工作。 | 2、18 |
 | [paper-voice](.agents/skills/paper-voice/SKILL.md) | 去套话和自我防御；保留作者声音；只改语法 | 修改已有正文，保持事实、术语、数值和必要限定。 | 3、4、13 |
 | [paper-rewrite](.agents/skills/paper-rewrite/SKILL.md) | 对照来源重组段落；处理真实相似度报告 | 来源清楚的改写或结构习作，保留归属与引用。 | 5、6 |
 | [paper-redteam](.agents/skills/paper-redteam/SKILL.md) | 严苛审稿；找拒稿理由和论证盲区 | 有定位与依据的问题、影响、最小检查和关闭条件。只审稿时保留原文。 | 7 |
@@ -60,7 +62,7 @@ cd codex-paper-review-writing
 
 `paper-harness` 是调度入口，单独复制它不会安装另外七个技能。下方安装器负责复制完整套件。此前参考的 anti-defensive-writing、Writing & Thinking with AI Assistance 和图片方法已按用途整合为规则；使用本套件无需另行安装这些方法来源。对应关系见 [技能指南的整合对照表](SKILL_GUIDE.md#3-之前的方法整合到哪里了)。
 
-## 17 组可复制提示词
+## 18 组可复制提示词
 
 完整文本在 [PROMPTS.md](PROMPTS.md)。先选任务，再把占位符换成真实路径、材料和交付要求。
 
@@ -83,6 +85,7 @@ cd codex-paper-review-writing
 | 15 | [仅检查某个已关闭问题](PROMPTS.md#15-仅检查某个已关闭问题) |
 | 16 | [安装后的核验与试用](PROMPTS.md#16-安装后的核验与试用) |
 | 17 | [我不知道该用哪个技能](PROMPTS.md#17-我不知道该用哪个技能) |
+| 18 | [根据材料写整篇论文或一节](PROMPTS.md#18-根据材料写整篇论文或一节) |
 
 [prompts](prompts) 另提供口述起草、只审稿、按意见修稿和安装核验四份独立 `.txt` 文件。首次安装用第 1 组的路径式请求，不要求目标会话已经识别技能。
 
@@ -93,13 +96,13 @@ cd codex-paper-review-writing
 先预览安装计划：
 
 ```bash
-python3 /完整路径/codex-paper-review-writing/tools/install_project.py --project /你的论文项目 --dry-run
+python3 /完整路径/paper-review-writing-skill/tools/install_project.py --project /你的论文项目 --dry-run
 ```
 
 检查输出中的目标文件与 `conflicts`；无冲突后执行安装：
 
 ```bash
-python3 /完整路径/codex-paper-review-writing/tools/install_project.py --project /你的论文项目
+python3 /完整路径/paper-review-writing-skill/tools/install_project.py --project /你的论文项目
 ```
 
 [安装器](tools/install_project.py) 会复制八个技能、共享规则、工作流、提示词、工具与记录模板，并向已有 `AGENTS.md` 追加带标记的工作流块。相同文件保持不变，已有 `research` 记录保留。发现不同的技能、规则或工具文件时，会在写入前报告冲突，供人工合并。
@@ -140,8 +143,8 @@ python3 /完整路径/codex-paper-review-writing/tools/install_project.py --proj
 如果另行拿到了配套的 `codex-paper-project.bundle`，可以用它恢复离线项目快照：
 
 ```bash
-git clone /你保存的路径/codex-paper-project.bundle codex-paper-review-writing
-cd codex-paper-review-writing
+git clone /你保存的路径/codex-paper-project.bundle paper-review-writing-skill
+cd paper-review-writing-skill
 ```
 
 恢复后按上面的项目使用说明继续，或通过安装器复制到已有论文项目。Bundle 内容对应生成快照时的版本；它是 GitHub 克隆之外的可选交付路径，不是使用本仓库的前置要求。

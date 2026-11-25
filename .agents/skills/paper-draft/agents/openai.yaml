@@ -1,7 +1,7 @@
 interface:
-  display_name: "口述笔记成稿"
+  display_name: "论文章节起草"
   short_description: "Turn rough research notes into faithful paper prose"
-  default_prompt: "使用 $paper-draft 把我的乱序口述笔记整理成保留原意的论文正文。"
+  default_prompt: "使用 $paper-draft，根据已有材料写这一节，核对支持它的数据或文献，并保留作者的语气。"
 
 policy:
   allow_implicit_invocation: true

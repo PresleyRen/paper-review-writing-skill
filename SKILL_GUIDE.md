@@ -25,6 +25,7 @@
 
 | 当前材料与目标 | 主技能 | 可能的后续 | Prompt |
 | --- | --- | --- | --- |
+| 根据材料写整篇实证论文、系统论文或综述 | `paper-harness` | 依篇型和章节调度；见[写作触发表](.agents/skills/paper-draft/references/writing-with-evidence.md) | 18 |
 | 要安装或组织多阶段论文任务 | `paper-harness` | 根据实际阶段调度 | 1、8、12 |
 | 有想法，担心贡献或实验设计站不住 | `paper-positioning` | 形成可判别的检查或实验计划 | 10 |
 | 有乱序口述、笔记或结果，要起草新段落 | `paper-draft` | 局部原意与语言核对 | 2 |

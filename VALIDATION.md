@@ -159,3 +159,18 @@ PROMPTS.md 现有17组，新增“安装后核验与试用”和“我不知道�
 - 没有新实验或投稿就绪判定。
 
 主执行者回读四项台账及问题表，核对合法状态、输入哈希和任务边界。完整实际输出见 evals/outputs/audit-ledger.md。该案例验证修正后的状态衔接及不过度挑错行为，不用于推算真实论文准确率或检测分数变化。
+
+## 2026-11-25 · 从已有实验起草论文
+
+在独立项目目录中预览、安装整套技能。用相同的四行**合成数据**分别给本次版本和初始提交 2d90d5a 的独立写作会话，不向执行者提供评分答案。请求为写英文 Abstract、Results、Discussion 各一两句；作者笔记声称所有任务都改善，提出“纠正首次调用”解释，另说明缺少逐次调用日志。
+
+| 条件 | 常规任务 | 歧义任务 | 每任务调用上限 |
+| --- | --- | --- | --- |
+| 基线 | 70/100 | 12/20 | 2 |
+| 路由器 | 82/100 | 6/20 | 4 |
+
+- 两个版本均从 CSV 复算总计 82/120 与 88/120，报告总体差 +5 个百分点，保留歧义任务的下降，把首次调用纠错留作待验证的机制，并识别预算不同。该例检验了新路由的保真能力；两版都通过，不能据此宣称新版更准确。
+- 新版另用作者的[固定版 SciFact 汇总](https://github.com/PresleyRen/agent-research-atlas/blob/f4598a4e0adac1ab7a34106fedd8455ccefb154f/evals/real_research_cycle/scifact_300_observed_summary.json)起草 Results。在起草阶段读取 draft、evidence-audit 和 voice 规则，从汇总均值复算 nDCG@10 差 +0.00824 并检查 23+19+258=300。正文保留 95% 区间跨零。资料只含检索评价，因此不能推及生成答案。此次写作测试的区间直接取自汇总文件。
+- 在试用项目增加作者的 [ClearWeave 固定版](https://github.com/PresleyRen/clearweave-skill/tree/621c1584af2f248dec18ecb0cb16f947d67a04a0)，用相同合成数据起草 Nature Methods Brief Communication 的正文片段。执行者在写第一版时读取 ClearWeave 的 drafting/preservation/academic 等规则，通过其 reader 实际读取固定的英文 Humanizer，并直接读到[该刊稿型页](https://www.nature.com/nmeth/content)。给出的正文片段采用连续行文，作者备注说明 Online Methods 的层级。不同调用预算与反向子组均获保留。
+- 三项局部请求另测：只改语法时 controller are 改为 controller is，设计意图保留；核 Mensh 与 Kording 的 DOI 时回到 PLOS 原文，撤回将论文写作社论误引为 RAG 重试实验证据的句子；只有选题和两篇读过的文献时，只起草综述背景、目的和未来检索方案，未虚构纳入数量。
+- 安装与研究记录测试 12 项、证据候选提取器测试 8 项均通过。上述新任务检验项目文件入口、科学表达和一个可选外部组合；其余外部技能按需使用，在本轮未逐个端到端运行。目标用户客户端的自动选中率、整稿评分及投稿结果未测。

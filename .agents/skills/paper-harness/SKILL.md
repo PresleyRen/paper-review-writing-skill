@@ -1,6 +1,6 @@
 ---
 name: paper-harness
-description: "Set up or coordinate a project-wide academic writing, rigorous review, revision and evidence-audit workflow. 用于安装论文工作流、论文项目初始化、完整审稿修稿闭环、投稿前全面检查。Use for explicit setup or a multi-stage paper task. Do not initialize files or run a full pipeline for an isolated paragraph edit, translation or general writing question."
+description: "Write or continue a complete research paper from data, code, papers or notes. 整篇论文写作、根据实验写论文、接着写我的论文、综述写作、跨章一致性。Route by manuscript type, claim and section. Also coordinate project setup, substantive review, revision and submission checks; honor local-only editing requests."
 ---
 
 # Paper Harness
@@ -23,7 +23,9 @@ Do not ask the author to restate materials already available. Infer routine path
 | --- | --- |
 | “Set this up for my project” | Install/merge the project rules and selected skills; preserve existing files; show the actual changes. |
 | “Is this claim worth a paper?” | paper-positioning; obtain evidence for a novelty claim before asserting it. |
-| “Write from these notes” | paper-draft; finish with a proportionate meaning and language check. |
+| “根据这些结果写论文 / 继续我的论文” | Identify the paper type and open the current draft, evidence and venue instructions. For empirical, systems or theory papers use paper-draft and its [section guide](../paper-draft/references/writing-with-evidence.md). For a whole paper, map each promised contribution to its experiment, proof, artifact or original source, plan sections around those links, then write all supported sections. Resume at the existing stage. |
+| “写综述” | Use ReviewCraft if available (see the section guide for source and fallback). Organize sources around the review question and reconcile differences in tasks and evidence. A related-work section inside an empirical paper stays with paper-draft. |
+| “写结果 / 帮我写这一节 / 写口述笔记” | Use paper-draft for this section. Open the underlying records relevant to any quantitative or literature claim. Apply voice guidance before composing. Return manuscript prose. |
 | “Only polish this paragraph” | paper-voice; no full review, new ledgers or new experiments. |
 | “Rewrite this matched paragraph” | paper-rewrite; preserve attribution and distinguish report types. |
 | “Review this manuscript” | paper-redteam; use paper-evidence-audit for evidence needed to assess a concrete issue. Do not rewrite unless requested. |
