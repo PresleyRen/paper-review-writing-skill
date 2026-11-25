@@ -19,6 +19,8 @@
 | 自定义审稿子代理、Stop hook | 可选；模板在 `optional`。按需配置，普通写作不依赖它们。 |
 | AI 检测或相似度服务 | 没有内置付费服务账号；可读用户提供的真实报告。 |
 
+指定目标刊或写目标刊的某一节时，入口会复用已有的同刊文献，或按任务与 ISSN 找候选，再分别核引文和学表达。[触发条件、选择方法与工具](.agents/skills/paper-draft/references/target-journal-papers.md)
+
 ## 2. 我现在该用哪个？
 
 下表的 prompt 编号对应 `PROMPTS.md`。安装尚未完成时，先用第1组路径式安装 prompt。

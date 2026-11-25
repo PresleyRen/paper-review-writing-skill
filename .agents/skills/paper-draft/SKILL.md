@@ -12,6 +12,8 @@ Keep the author's priorities and evidence status intact.
 
 For a manuscript section, use the relevant row in [Writing with evidence](references/writing-with-evidence.md). For a whole paper, coordinate sections with paper-harness when available. Apply the guide directly if this is the only installed skill. Keep ordinary note-to-prose work lightweight. Choose the companion by the decision it must resolve and use its result in this draft. Draft only after checking the inputs needed for the particular claim. Report a material unresolved gap separately and finish the supported text.
 
+When the project names a target journal and the task involves drafting or literature positioning, apply [Target-journal papers](references/target-journal-papers.md) before composing. Reuse comparable papers already located; when needed, search the journal for this specific task. Check citation support and section-level writing examples independently. Honor author-supplied evidence limits and skip new searches for a grammar-only edit.
+
 ## Load only relevant context
 
 1. Identify the requested section, language, audience, length and output format.

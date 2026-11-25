@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="1878" viewBox="0 0 820 1878" role="img" aria-labelledby="title desc">
+<title id="title">论文写作 Agent：从实验到投稿的技能触发图</title><desc id="desc">整篇论文使用 paper-harness，单章使用 paper-draft。五步按需选择技能，包括确定稿型、提取证据、检索并使用目标期刊论文、分章起草，以及核查和返修。</desc>
+<rect x="0" y="0" width="820" height="1878" rx="0" fill="#F5F5F0" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="820" height="162" rx="0" fill="#135448" stroke="none" stroke-width="1"/>
+<text x="37" y="64" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="51" font-weight="700" fill="#FFFFFF">论文写作 Agent</text>
+<text x="40" y="119" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="30" font-weight="400" fill="#DDF1E7">从已有实验到投稿，每一步何时调用哪个技能</text>
+<rect x="25" y="180" width="770" height="88" rx="14" fill="#FCFDFB" stroke="#CCD9D3" stroke-width="1.3"/>
+<text x="47" y="236" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="27" font-weight="700" fill="#135448">整篇论文</text>
+<text x="180" y="236" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="28" font-weight="700" fill="#152D30">paper-harness</text>
+<path d="M414,199 L414,250" fill="none" stroke="#CCD9D3" stroke-width="2" stroke-linecap="round"/>
+<text x="436" y="236" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="27" font-weight="700" fill="#135448">单个章节</text>
+<text x="563" y="236" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="28" font-weight="700" fill="#152D30">paper-draft</text>
+<path d="M410,273 v16 m-6,-6 6,6 6,-6" fill="none" stroke="#7A9389" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="25" y="298" width="770" height="170" rx="14" fill="#FFFFFF" stroke="#CCD9D3" stroke-width="1.3"/>
+<rect x="45" y="319" width="42" height="42" rx="13" fill="#135448" stroke="none" stroke-width="1"/>
+<text x="58" y="349" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">1</text>
+<text x="103" y="351" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#152D30">确定稿型与章节要求</text>
+<text x="50" y="399" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#135448">已定目标期刊</text>
+<text x="235" y="399" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">ScholarRoute 查期刊官网，确认稿型和栏目。</text>
+<text x="50" y="444" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#135448">尚未定刊</text>
+<text x="235" y="444" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">先按领域惯例起草，定刊后再适配。</text>
+<path d="M410,475 v16 m-6,-6 6,6 6,-6" fill="none" stroke="#7A9389" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="25" y="501" width="770" height="170" rx="14" fill="#FFFFFF" stroke="#CCD9D3" stroke-width="1.3"/>
+<rect x="45" y="522" width="42" height="42" rx="13" fill="#135448" stroke="none" stroke-width="1"/>
+<text x="58" y="552" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">2</text>
+<text x="103" y="554" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#152D30">从实验提取可写的结论</text>
+<text x="50" y="601" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#135448">有实验记录</text>
+<text x="235" y="601" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">paper-evidence-audit 核对样本、基线与结果。</text>
+<text x="50" y="646" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#135448">有竞争解释</text>
+<text x="235" y="646" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">paper-positioning 找到能区分解释的对照。</text>
+<path d="M410,678 v16 m-6,-6 6,6 6,-6" fill="none" stroke="#7A9389" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="25" y="704" width="770" height="404" rx="14" fill="#FFFFFF" stroke="#CCD9D3" stroke-width="1.3"/>
+<rect x="45" y="725" width="42" height="42" rx="13" fill="#135448" stroke="none" stroke-width="1"/>
+<text x="58" y="755" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">3</text>
+<text x="103" y="757" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#152D30">已有目标期刊和研究主题</text>
+<text x="49" y="800" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="27" font-weight="400" fill="#3C5256">Crossref 找同刊同方向的候选论文，按稿型筛选。</text>
+<text x="49" y="839" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#3C5256">citation-management 核对 DOI，引用和用词回原文判断。</text>
+<rect x="48" y="860" width="351" height="217" rx="12" fill="#E4F3EA" stroke="none" stroke-width="1"/>
+<rect x="417" y="860" width="354" height="217" rx="12" fill="#EAF1FA" stroke="none" stroke-width="1"/>
+<text x="66" y="904" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="33" font-weight="700" fill="#135448">要引用</text>
+<text x="436" y="904" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="33" font-weight="700" fill="#224D75">要学表达</text>
+<text x="66" y="951" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">定位支持本句的原文、</text>
+<text x="66" y="986" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">表格或实验条件。</text>
+<text x="66" y="1021" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">有依据才引用。</text>
+<text x="66" y="1056" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">外刊原始工作也照引。</text>
+<text x="436" y="951" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">ClearWeave 提炼术语、</text>
+<text x="436" y="986" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">比较方式和段落顺序。</text>
+<text x="436" y="1021" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">用自己的结果写作，</text>
+<text x="436" y="1056" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">写清结论适用范围。</text>
+<path d="M410,1116 v16 m-6,-6 6,6 6,-6" fill="none" stroke="#7A9389" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="25" y="1142" width="770" height="381" rx="14" fill="#FFFFFF" stroke="#CCD9D3" stroke-width="1.3"/>
+<rect x="45" y="1163" width="42" height="42" rx="13" fill="#135448" stroke="none" stroke-width="1"/>
+<text x="58" y="1193" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">4</text>
+<text x="103" y="1195" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#152D30">按章节起草，外部技能按需使用</text>
+<text x="50" y="1241" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#135448">开始写一节</text>
+<text x="235" y="1241" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">paper-draft 按问题组织引言、方法或结果。</text>
+<text x="50" y="1286" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#135448">写第一版时</text>
+<text x="235" y="1286" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">paper-voice / ClearWeave 保留术语与作者语气。</text>
+<text x="235" y="1327" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#3C5256">Humanizer 按语言选，Nature Writing 按稿型选。</text>
+<path d="M50,1353 L770,1353" fill="none" stroke="#CCD9D3" stroke-width="1.5" stroke-linecap="round"/>
+<text x="50" y="1402" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#135448">基于来源重组</text>
+<text x="235" y="1402" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">paper-rewrite 保留原作者归属与必要引用。</text>
+<text x="50" y="1451" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#135448">写独立综述</text>
+<text x="235" y="1451" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">ReviewCraft 统筹检索、筛选与文献综合。</text>
+<text x="50" y="1500" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#135448">需要重画图</text>
+<text x="235" y="1500" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">FigureFoundry 用实验数据生成图与图注。</text>
+<path d="M410,1530 v16 m-6,-6 6,6 6,-6" fill="none" stroke="#7A9389" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="25" y="1556" width="770" height="272" rx="14" fill="#FFFFFF" stroke="#CCD9D3" stroke-width="1.3"/>
+<rect x="45" y="1577" width="42" height="42" rx="13" fill="#135448" stroke="none" stroke-width="1"/>
+<text x="58" y="1607" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">5</text>
+<text x="103" y="1609" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#152D30">核查、审阅与返修</text>
+<text x="50" y="1659" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#135448">正文已写成</text>
+<text x="235" y="1659" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">paper-evidence-audit 复核数字和引文。</text>
+<text x="50" y="1708" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#135448">投稿前审阅</text>
+<text x="235" y="1708" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">paper-redteam 检查论证与评审关注点。</text>
+<text x="235" y="1747" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#3C5256">复杂方法或统计问题可调用 Paper Review Atlas。</text>
+<text x="50" y="1801" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#135448">收到审稿意见</text>
+<text x="235" y="1801" font-family="Noto Sans CJK SC, Source Han Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#152D30">paper-revision 逐条修改并复核。</text>
+</svg>

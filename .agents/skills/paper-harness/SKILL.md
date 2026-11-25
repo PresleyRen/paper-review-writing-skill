@@ -17,6 +17,8 @@ For a question about which skills to install or use, consult SKILL_GUIDE.md when
 
 Do not ask the author to restate materials already available. Infer routine paths from the actual project. A template path is not evidence that a manuscript exists there.
 
+When the venue is known, give paper-draft the journal, article type, actual research task and intended section. Apply the [target-journal paper workflow](../paper-draft/references/target-journal-papers.md) once and reuse its results across relevant sections. For a full survey, hand pertinent sources and section examples to ReviewCraft; its inclusion criteria govern survey evidence. Keep separate profiles for different candidate venues until a target is chosen.
+
 ## Select the entry point
 
 | Task | Entry point and necessary follow-through |

@@ -8,6 +8,10 @@
 
 整篇写作可以直接说：“使用 `$paper-harness`，根据当前项目的数据和论文写英文初稿。”只写一节可以说：“使用 `$paper-draft` 写 Results，核对实验是否支持每个结论。”已有好句和负面结果都可以保留。[每个场景会触发什么](.agents/skills/paper-draft/references/writing-with-evidence.md) · [完整写作提示词](PROMPTS.md#18-根据材料写整篇论文或一节)
 
+选定目标刊后，写作入口会先找同刊同任务论文，逐句判断引文支持，并从已读章节提炼术语与表达。[同刊写作规则与检索命令](.agents/skills/paper-draft/references/target-journal-papers.md)
+
+![论文写作时各阶段、触发条件和调用的技能](.agents/skills/paper-harness/assets/paper-writing-workflow.svg)
+
 ## 文档入口
 
 | 文档 | 什么时候读 |

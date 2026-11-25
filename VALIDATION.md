@@ -174,3 +174,10 @@ PROMPTS.md 现有17组，新增“安装后核验与试用”和“我不知道�
 - 在试用项目增加作者的 [ClearWeave 固定版](https://github.com/PresleyRen/clearweave-skill/tree/621c1584af2f248dec18ecb0cb16f947d67a04a0)，用相同合成数据起草 Nature Methods Brief Communication 的正文片段。执行者在写第一版时读取 ClearWeave 的 drafting/preservation/academic 等规则，通过其 reader 实际读取固定的英文 Humanizer，并直接读到[该刊稿型页](https://www.nature.com/nmeth/content)。给出的正文片段采用连续行文，作者备注说明 Online Methods 的层级。不同调用预算与反向子组均获保留。
 - 三项局部请求另测：只改语法时 controller are 改为 controller is，设计意图保留；核 Mensh 与 Kording 的 DOI 时回到 PLOS 原文，撤回将论文写作社论误引为 RAG 重试实验证据的句子；只有选题和两篇读过的文献时，只起草综述背景、目的和未来检索方案，未虚构纳入数量。
 - 安装与研究记录测试 12 项、证据候选提取器测试 8 项均通过。上述新任务检验项目文件入口、科学表达和一个可选外部组合；其余外部技能按需使用，在本轮未逐个端到端运行。目标用户客户端的自动选中率、整稿评分及投稿结果未测。
+
+## 2026-11-25 · 同刊引用和按章节学习表达
+
+- 确认 Knowledge-Based Systems 的 ISSN 0950-7051，以公开查询 `out-of-scope intent detection` 运行随包 Crossref 脚本。默认窗口返回 10 个候选，按 DOI 去重。检索排序只用于初筛。
+- 独立会话实际从 paper-draft 起草英文 Related Work，查询窗口为 5。核到 [Sun 等（2024）](https://doi.org/10.1016/j.knosys.2023.111167)与 [Duan 等（2026）](https://doi.org/10.1016/j.knosys.2026.115949) 的出版社摘要及可读片段。Sun 等可支撑 OOS 训练数据增强；Duan 等可支撑置信度低时调用 LLM 核验。原请求还提到真实客服 Agent 的端到端成功率，核到的意图分类实验无法支持这半句，因此成稿未收录。
+- 起草时沿用领域术语 out-of-scope (OOS) intent detection，按训练数据与推理决策两个环节比较方法，并将本稿拟说的结论限定到实际评估单位。只把可读位置作为相应章节的表达样本。该试用验证了两篇具体论文的用法；目标期刊由试用指定。
+- 新增 4 项检索器测试覆盖刊号、查询编码、重复 DOI、无结果、错误响应和请求出处。原有 20 项工具测试亦通过。
