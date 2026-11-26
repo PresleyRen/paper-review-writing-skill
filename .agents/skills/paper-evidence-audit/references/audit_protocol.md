@@ -109,6 +109,8 @@ Record figure regions inspected; text extraction alone cannot verify the plot.
 
 ## 5. Citations
 
+For new or changed cited claims, local citation audits and full submission review, execute [Citation verification](citation-verification.md) in the corresponding mode. It adds identity/metadata/status/support axes, per-occurrence verification, optional isolated review, source provenance, coverage and readiness rules. Keep the existing finding and project ledger enums below; the supplementary citation axes do not replace them.
+
 Resolve a citation key to its bibliography record and then to the actual source.
 Verify authors, title, year, version, venue, DOI or stable URL where available.
 Read the passage, theorem, method, or result being attributed.
