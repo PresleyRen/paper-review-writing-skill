@@ -37,6 +37,10 @@ When the venue is known, give paper-draft the journal, article type, actual rese
 Read a selected skill before applying it. Do not load all references by default.
 An automatic match is a routing aid, not proof that a workflow executed.
 
+## Route citation verification at two gates
+
+For drafting and literature positioning, pass any new or materially changed cited claim through paper-evidence-audit's [admission protocol](../paper-evidence-audit/references/citation-verification.md) before paper-draft writes it. Reuse evidence with unchanged claim scope and version. For full submission review, inventory all citation occurrences and run the same protocol in submission mode; where genuine isolated review is available, assign a fresh skeptical reviewer. Attach the actual reports to the citations check, reconcile coverage and current hashes, and leave readiness incomplete for unresolved material issues. For a ReviewCraft handoff, pass this protocol and scoped evidence if available; do not assume another installed skill ran it. Optional upstream adapters must actually be installed, authorized and invoked; do not auto-download or claim independent review without evidence.
+
 ## Coordinate independent roles
 
 When tools support delegation and the task benefits from it:
