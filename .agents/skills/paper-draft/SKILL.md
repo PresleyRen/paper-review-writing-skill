@@ -14,6 +14,10 @@ For a manuscript section, use the relevant row in [Writing with evidence](refere
 
 When the project names a target journal and the task involves drafting or literature positioning, apply [Target-journal papers](references/target-journal-papers.md) before composing. Reuse comparable papers already located; when needed, search the journal for this specific task. Check citation support and section-level writing examples independently. Honor author-supplied evidence limits and skip new searches for a grammar-only edit.
 
+## Citation admission before writing
+
+Before inserting any new or materially changed external claim or citation, read and apply the admission mode of [paper-evidence-audit citation verification](../paper-evidence-audit/references/citation-verification.md). Check identity, metadata, publication status and the exact source passage that supports the claim. Reuse scoped evidence only if its source version, interpretation and status remain appropriate. This is a write-time gate, not an end-of-draft reminder. If the companion is absent, explicitly apply the same minimum checks using available evidence and disclose the missing module. Do not fabricate references or carry an unsupported claim into the finished prose; narrow, replace with a verified source, or report the gap separately. Grammar-only edits do not trigger a full citation audit.
+
 ## Load only relevant context
 
 1. Identify the requested section, language, audience, length and output format.
