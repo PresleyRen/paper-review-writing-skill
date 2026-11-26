@@ -48,6 +48,10 @@ Record material findings outside the manuscript. Close an issue only through an 
 
 After revision, recheck the affected claims, numbers, citations and dependencies. Do not reopen closed issues without a relevant change or new evidence.
 
+## Final publication gate
+
+For any complete manuscript intended for journal/conference submission or camera-ready release, use Paper Review Atlas as the single final acceptance owner: https://github.com/PresleyRen/paper-review-atlas/blob/main/skills/paper-review-atlas/references/acceptance-gates.md . Load the installed/current Atlas protocol and perform its 18 applicable checks against the actual manuscript, original experiment data/code/logs, citations, figures, target official requirements and upload artifacts. Transfer existing evidence and specialist reports instead of duplicating experiments or ledgers. Preserve stable issue IDs; repair, actually recheck and invalidate dependent prior approvals after any change. Before calling a package ready, execute Atlas acceptance_gate.py with --publication --venue and repeated --submission-file options for the actual complete target package; preserve the actual receipt. A local specialist check, model self-assessment, planned experiment, hash alone or missing dependency is not a pass. If the Atlas module or required evidence is unavailable, complete useful scoped work, explicitly mark final readiness blocked, and do not auto-install, upload or submit. Separate scientific validity, contribution, venue fit, and author authorization; a record-level pass only means ready for author confirmation within the checked scope. Recheck before authorized submission, resubmission or camera-ready delivery. A proof-stage change affecting scientific content requires affected rechecks. No automatic publication or guarantee of acceptance.
+
 ## Project workflow and records
 
 For a multi-stage task, read RESEARCH_HARNESS.md and research/PROJECT.json if present. Use existing research/state.json, claims.tsv and issues.tsv when durable tracking is needed; a simple chat edit does not require new ledgers.
