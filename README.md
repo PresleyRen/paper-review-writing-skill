@@ -66,6 +66,12 @@ cd paper-review-writing-skill
 
 `paper-harness` 是调度入口，单独复制它不会安装另外七个技能。下方安装器负责复制完整套件。此前参考的 anti-defensive-writing、Writing & Thinking with AI Assistance 和图片方法已按用途整合为规则；使用本套件无需另行安装这些方法来源。对应关系见 [技能指南的整合对照表](SKILL_GUIDE.md#3-之前的方法整合到哪里了)。
 
+## 引文核验：写作准入 + 投稿前复核（2026-11-26）
+
+仍使用原有八个技能，不新增重叠入口。`paper-evidence-audit` 维护[统一引文核查协议](.agents/skills/paper-evidence-audit/references/citation-verification.md)，`paper-draft` 在新增或改变引文时执行准入，`paper-harness` 在投稿前逐引用复核。覆盖 DOI/版本/字段/发表状态、真实原文支持、必要的独立质疑、问题修复与当前版本记录。仅语法润色不触发全量联网审计。
+
+采用 ARIS、Nature Skills、Nature Paper Skills、K-Dense 等公开方法，源码出处和适配条件记录在协议中。默认是本地规则整合，未复制或安装第三方代码；已安装的上游工具可经实际权限及兼容性检查后按需使用。宿主需要实际检索、全文访问及（可用时）独立审查能力。现有安装器递归复制该 reference；无需新增 Python 依赖。未验证真实 Codex 自动触发和真实论文准确率提升。
+
 ## 18 组可复制提示词
 
 完整文本在 [PROMPTS.md](PROMPTS.md)。先选任务，再把占位符换成真实路径、材料和交付要求。
