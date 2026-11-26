@@ -177,6 +177,10 @@ optional/agents/ 提供官方格式的自定义角色示例。复制到实际项
 
 命令只打印哈希，不改状态、不批准检查。将实际检查覆盖的哈希写入 state.json 的 checked_artifact_sha256。项目配置、稿件、三张 ledger、check artifacts 以及 evidence_files 都纳入所需快照。
 
+### 统一最终投稿验收（2026-11-26）
+
+写作套件的本地 gate 检查研究记录；整篇论文发表前由 [Paper Review Atlas](https://github.com/PresleyRen/paper-review-atlas/blob/main/skills/paper-review-atlas/references/acceptance-gates.md) 统一18项验收，必须核查真实实验与主张、引用、图表、代码、统计、期刊/会议要求及当前投稿文件。正式投稿/重投/最终交稿前，在真实项目执行 Atlas 的 `acceptance_gate.py --root PAPER_DIR --ledger acceptance.json --publication --venue 实际目标 --submission-file 实际文件`，每个提交文件重复选项。保留检查输出；缺少模块、材料或重大问题未关闭，不标记投稿就绪。两个程序都通过仍不证明科学结论或外部录用，提交另需实际授权。
+
 ### 投稿级 gate
 
     python3 tools/paper_gate.py check --project . --submission
