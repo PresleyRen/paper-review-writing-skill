@@ -75,6 +75,12 @@ A test plan is not a completed test. Do not run costly or destructive experiment
 Keep the original notes and raw evidence intact. Preserve unrelated user changes.
 Do not stop after a plan when supported work remains.
 
+## Unified final publication acceptance
+
+For any complete manuscript intended for journal/conference submission or camera-ready release, use Paper Review Atlas as the single final acceptance owner: https://github.com/PresleyRen/paper-review-atlas/blob/main/skills/paper-review-atlas/references/acceptance-gates.md . Load the installed/current Atlas protocol and perform its 18 applicable checks against the actual manuscript, original experiment data/code/logs, citations, figures, target official requirements and upload artifacts. Transfer existing evidence and specialist reports instead of duplicating experiments or ledgers. Preserve stable issue IDs; repair, actually recheck and invalidate dependent prior approvals after any change. Before calling a package ready, execute Atlas acceptance_gate.py with --publication --venue and repeated --submission-file options for the actual complete target package; preserve the actual receipt. A local specialist check, model self-assessment, planned experiment, hash alone or missing dependency is not a pass. If the Atlas module or required evidence is unavailable, complete useful scoped work, explicitly mark final readiness blocked, and do not auto-install, upload or submit. Separate scientific validity, contribution, venue fit, and author authorization; a record-level pass only means ready for author confirmation within the checked scope. Recheck before authorized submission, resubmission or camera-ready delivery. A proof-stage change affecting scientific content requires affected rechecks. No automatic publication or guarantee of acceptance.
+
+When this project uses paper_gate.py, run it as well; its four legacy checks are component records, not a substitute for Atlas. Use the actual Atlas ledger and output as check artifacts without creating incompatible duplicate issue states.
+
 ## Exit and verification
 
 Use the exit criteria in the project harness. For a submission task, verify sources, numerical associations, claim boundaries, citations and the final manuscript separately from prose polish.
