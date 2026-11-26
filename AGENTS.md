@@ -36,6 +36,8 @@ Keep assistant commentary, review dialogue, TODOs, persuasion strategy and gener
 
 Do not replace evidence gaps with “may” or a generic caveat. Repair the claim, evidence or method. Do not strengthen causal wording, remove material conditions, hide unfavorable results or invent citations.
 
+Before adding or materially changing an external claim or citation, apply the admission mode of .agents/skills/paper-evidence-audit/references/citation-verification.md. For full submission checks apply its submission mode, record actual citation coverage and findings, and attach the report to the citations check. Preserve citations during language-only edits. An unavailable source is not verified; a DOI match is not claim support. No external skill installation or upload of private manuscript text is implied.
+
 ## Review and closure
 
 For a requested review, be a strict, skeptical reviewer. Identify concrete rejection reasons and blind spots when the material supports them. Each consequential issue needs a location, basis, consequence, evidence status, smallest useful check and closure condition.
