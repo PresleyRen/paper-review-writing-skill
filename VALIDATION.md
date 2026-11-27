@@ -181,3 +181,10 @@ PROMPTS.md 现有17组，新增“安装后核验与试用”和“我不知道�
 - 独立会话实际从 paper-draft 起草英文 Related Work，查询窗口为 5。核到 [Sun 等（2024）](https://doi.org/10.1016/j.knosys.2023.111167)与 [Duan 等（2026）](https://doi.org/10.1016/j.knosys.2026.115949) 的出版社摘要及可读片段。Sun 等可支撑 OOS 训练数据增强；Duan 等可支撑置信度低时调用 LLM 核验。原请求还提到真实客服 Agent 的端到端成功率，核到的意图分类实验无法支持这半句，因此成稿未收录。
 - 起草时沿用领域术语 out-of-scope (OOS) intent detection，按训练数据与推理决策两个环节比较方法，并将本稿拟说的结论限定到实际评估单位。只把可读位置作为相应章节的表达样本。该试用验证了两篇具体论文的用法；目标期刊由试用指定。
 - 新增 4 项检索器测试覆盖刊号、查询编码、重复 DOI、无结果、错误响应和请求出处。原有 20 项工具测试亦通过。
+
+## 2026-11-27 · ClearWeave 学术语言衔接与持续集成
+
+- paper-draft 在英文第一段前读取 ClearWeave 的学术 Draft 指导，逐段应用；paper-voice 按 Polish/Cleanup 处理已有稿，语法-only 请求保持局部。当前写作者负责一次整合，保留原有引文准入、证据审查和 Atlas 最终验收边界。
+- 本地 Python 3.12.14 实际运行：`python3 tools/test_paper_tools.py`（12 项）、`python3 .agents/skills/paper-evidence-audit/scripts/test_extract_audit_items.py`（8 项）、`python3 .agents/skills/paper-draft/scripts/test_find_venue_papers.py`（4 项），全部通过；`git diff --check` 通过。
+- 此前仓库没有 GitHub Actions 工作流。本次新增 `.github/workflows/validate.yml`，使用与 ClearWeave 相同的固定版 checkout/setup-python，在 Python 3.10、3.13 上运行上述三组测试。远端执行结果需对发布提交另行核对；本地通过不代表远端已通过。
+- 本次调用方改动为工作流规则与 CI 配置；没有改变工具实现、研究记录格式、已有测试或示例数据。上述软件测试不测量模型自动触发率、论文语言提升幅度或真实投稿表现。

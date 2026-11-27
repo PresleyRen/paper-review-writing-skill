@@ -16,6 +16,8 @@ Use relevant approved author samples and the current draft. If no suitable sampl
 
 A request to reduce “AI味” or defensive writing activates this skill for language quality. It does not make an AI detector a ground-truth author identifier.
 
+For English manuscript polishing or final cleanup with ClearWeave available, read its SKILL.md, preservation rules and [academic-humanizer protocol](https://github.com/PresleyRen/clearweave-skill/blob/6611ead8e3028f1671b7a879e2c61832e34ec837/skills/clearweave/references/academic-humanizer.md). Use **Polish** for the requested language revision and **Cleanup** for finished-draft minimal cleaning: keep headings, paragraph order, equations, labels, citations and unaffected text, changing only identified expression problems. A grammar-only request stays grammar-only and needs no extra guide. Paper Voice owns the single edit; do not run a second broad Humanizer pass or return the task to a manuscript planner. If the protocol is unavailable, use the local rules below without claiming the companion ran. Language editing alone does not trigger an external evidence audit.
+
 ## Preserve a meaning fingerprint
 
 Preserve who or what is discussed, the comparator, outcome, direction, magnitude, population, setting, uncertainty, negations, citation attachment and evidence status.

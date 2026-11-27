@@ -12,6 +12,8 @@ Keep the author's priorities and evidence status intact.
 
 For a manuscript section, use the relevant row in [Writing with evidence](references/writing-with-evidence.md). For a whole paper, coordinate sections with paper-harness when available. Apply the guide directly if this is the only installed skill. Keep ordinary note-to-prose work lightweight. Choose the companion by the decision it must resolve and use its result in this draft. Draft only after checking the inputs needed for the particular claim. Report a material unresolved gap separately and finish the supported text.
 
+Before composing the first paragraph, select the language guidance in that guide's companion table. For an English manuscript with ClearWeave available, read its preservation and drafting rules and use its academic-humanizer **Draft** route while composing each paragraph. Paper Draft remains responsible for evidence and section structure; ClearWeave supplies expression guidance. Do not send the finished paragraph through a second general Humanizer rewrite. If the companion cannot be read, apply the local writing and paper-voice principles and complete the supported draft; do not claim that an external guide ran.
+
 When the project names a target journal and the task involves drafting or literature positioning, apply [Target-journal papers](references/target-journal-papers.md) before composing. Reuse comparable papers already located; when needed, search the journal for this specific task. Check citation support and section-level writing examples independently. Honor author-supplied evidence limits and skip new searches for a grammar-only edit.
 
 ## Citation admission before writing
